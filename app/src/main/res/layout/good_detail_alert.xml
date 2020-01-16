@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/view_size_20"
+    android:background="@drawable/white_6dp"
+    >
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_marginTop="@dimen/view_size_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/side969696_6dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/view_size_10"
+        android:paddingRight="@dimen/view_size_10"
+        android:paddingTop="@dimen/view_size_5"
+        android:paddingBottom="@dimen/view_size_5"
+        android:hint="请输入资金密码"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_size_20"
+            android:layout_gravity="right"
+            android:text="忘记密码?"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/view_size_5"
+            android:textColor="@color/color_3BA370"
+            android:textSize="@dimen/text_size_14"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/view_size_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/awardpage_button1"
+            android:layout_width="@dimen/view_size_100"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/view_size_10"
+            android:textColor="@color/color_3BA370"
+            />
+        <TextView
+            android:id="@+id/awardpage_button2"
+            android:background="@drawable/btn_3ba370_20dp"
+            android:layout_width="@dimen/view_size_100"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/view_size_10"
+            android:textColor="@color/white"
+            style="bold"
+            />
+    </LinearLayout>
+
+</LinearLayout>

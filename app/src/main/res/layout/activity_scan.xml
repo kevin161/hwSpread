@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.activity.setting.ScanActivity">
+
+
+    <com.qingmei2.library.view.QRCodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.qingmei2.library.view.QRCoverView
+        android:id="@+id/cover_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:cornerColor="@color/color_outside_bg"
+        app:cornerLength="16dp"
+        app:cornerOutside="false"
+        app:cornerWidth="3dp"
+        app:laserColor="@color/color_laser"
+        app:laserVisible="true"
+        app:scanRectHeight="150dp"
+        app:scanRectWidth="150dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_60"
+        android:gravity="center"
+        android:text="请用中心方框\n对准需要扫描的二维码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_150"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/layout_left_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="36dp"
+            android:paddingRight="@dimen/view_size_10">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/scan_back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/view_size_10"
+            android:paddingRight="36dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/scan_img" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

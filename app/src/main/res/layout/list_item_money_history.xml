@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingStart="@dimen/view_size_10"
+    android:paddingEnd="@dimen/view_size_10">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_size_10"
+        android:layout_marginTop="@dimen/view_size_10"
+        android:textSize="@dimen/text_size_14"
+        tool:text="成功" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/view_size_10"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16"
+        tool:text="1000" />
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/view_size_10"
+        android:layout_marginBottom="@dimen/view_size_10"
+        android:textColor="@color/color_969696"
+        android:textSize="@dimen/text_size_13"
+        tool:text="2019-01-10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/view_size_10"
+        android:layout_marginEnd="@dimen/view_size_10"
+        android:background="#DBDBDB" />
+
+
+</RelativeLayout>

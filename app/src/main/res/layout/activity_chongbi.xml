@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_size_15"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_32353C"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_40"
+                android:background="@drawable/white_6dp"
+                android:paddingLeft="@dimen/view_size_10"
+                android:paddingRight="@dimen/view_size_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="余额:"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light"/>
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_fbdb9d"
+                    android:textSize="@dimen/text_size_14"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_40"
+                android:background="@drawable/white_6dp"
+                android:layout_marginTop="@dimen/view_size_1"
+                android:paddingLeft="@dimen/view_size_10"
+                android:paddingRight="@dimen/view_size_10">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_toLeftOf="@+id/copy"
+                    android:layout_marginRight="@dimen/view_size_10"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light"/>
+
+                <ImageView
+                    android:id="@+id/copy"
+                    android:layout_width="@dimen/view_size_15"
+                    android:layout_height="@dimen/view_size_16"
+                    android:background="@mipmap/copy_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_1"
+                android:background="@drawable/white_6dp"
+                android:padding="@dimen/view_size_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_size_5"
+                    android:layout_marginLeft="@dimen/view_size_5"
+                    android:textColor="@color/light"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="钱包二维码"
+                    />
+
+                <ImageView
+                    android:id="@+id/qrcode"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/view_size_40"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_40"
+                android:background="@drawable/white_6dp"
+                android:layout_marginTop="@dimen/view_size_1"
+                android:paddingLeft="@dimen/view_size_10"
+                android:paddingRight="@dimen/view_size_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="币种:"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light"/>
+
+                <TextView
+                    android:id="@+id/currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_CCCCCC"
+                    android:textSize="@dimen/text_size_13"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_40"
+                android:background="@drawable/white_6dp"
+                android:layout_marginTop="@dimen/view_size_1"
+                android:paddingLeft="@dimen/view_size_10"
+                android:paddingRight="@dimen/view_size_10">
+
+                <TextView
+                    android:id="@+id/number_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="申请数量:"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light"/>
+
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/number_text"
+                    android:gravity="right"
+                    android:digits="1234567890."
+                    android:layout_marginLeft="@dimen/view_size_10"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:textColor="@color/light"
+                    android:textSize="@dimen/text_size_13"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_40"
+                android:background="@drawable/white_6dp"
+                android:layout_marginTop="@dimen/view_size_1"
+                android:paddingLeft="@dimen/view_size_10"
+                android:paddingRight="@dimen/view_size_10">
+
+                <TextView
+                    android:id="@+id/code_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="短信验证码:"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light"/>
+
+                <EditText
+                    android:id="@+id/code"
+                    android:layout_marginLeft="@dimen/view_size_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/code_text"
+                    android:layout_toLeftOf="@+id/get_captcha"
+                    android:background="@null"
+                    android:digits="1234567890"
+                    android:maxLength="6"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light"
+                    />
+
+                <TextView
+                    android:id="@+id/get_captcha"
+                    android:layout_width="@dimen/view_size_80"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_1490D8"
+                    android:text="获取验证码"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_12"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/view_size_10"
+                android:paddingRight="@dimen/view_size_10"
+                android:layout_marginTop="@dimen/view_size_5"
+                android:layout_marginBottom="@dimen/view_size_2"
+                android:textColor="@color/light"
+                android:textSize="@dimen/text_size_10"
+                android:text="(钱包交易到账后方可查到TXID,黏贴至此处)"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_40"
+                android:background="@drawable/white_6dp"
+                android:layout_marginTop="@dimen/view_size_1"
+                android:paddingLeft="@dimen/view_size_10"
+                android:paddingRight="@dimen/view_size_10">
+
+                <TextView
+                    android:id="@+id/address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="TXID(交易ID):"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light"/>
+
+                <EditText
+                    android:id="@+id/voucher_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/address_text"
+                    android:layout_marginLeft="@dimen/view_size_10"
+                    android:gravity="right"
+                    android:background="@null"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/light"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_150"
+                android:background="@drawable/white_6dp"
+                android:layout_marginTop="@dimen/view_size_1"
+                android:paddingLeft="@dimen/view_size_10"
+                android:paddingRight="@dimen/view_size_10">
+
+                <TextView
+                    android:id="@+id/image_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginTop="@dimen/view_size_10"
+                    android:text="上传转币凭证:"
+                    android:textColor="@color/light"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_size_30"
+                    >
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/view_size_10"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/confirm_modift"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_50"
+                android:layout_marginTop="@dimen/view_size_30"
+                android:layout_marginLeft="@dimen/view_size_10"
+                android:layout_marginRight="@dimen/view_size_10"
+                android:text="确认申请"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17"
+                android:gravity="center"
+                android:background="@drawable/dcb981_6dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.leisurely.spread"
+        minSdkVersion 19
+        targetSdkVersion 28
+        buildToolsVersion '28.0.2'
+        versionCode 7
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        useLibrary "org.apache.http.legacy"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "uUlPrJfUmlApR2ZyrAxk6A",
+                GETUI_APP_KEY   : "SFUr9jfKNQ8Hyi2YjPtEKA",
+                GETUI_APP_SECRET: "VT95jWFlg96dRm9FZcHgl8",
+//                JPUSH_PKGNAME : applicationId,
+//                JPUSH_APPKEY : "30e72bb9622f459040971803", //JPush 上注册的包名对应的 Appkey.
+//                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+        signingConfigs {
+            key {
+                keyAlias 'bzsbzsbzs'
+                keyPassword 'bzsbzsbzs'
+                storePassword 'bzsbzsbzs'
+                storeFile file('src/main/assets/bzs.jks')
+            }
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.key
+        }
+        debug {
+            signingConfig signingConfigs.key
+            minifyEnabled false
+            debuggable true
+        }
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    allprojects {
+        repositories {
+            google()
+            jcenter()
+            maven { url 'https://jitpack.io' }
+//            maven { url "https://maven.google.com" }
+//            maven {
+//                url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/"
+//            }
+//            maven{ url 'https://maven.aliyun.com/repository/google' }
+//            maven{ url 'https://maven.aliyun.com/repository/jcenter' }
+//            maven{url 'http://maven.aliyun.com/nexus/content/groups/public'}
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+//    implementation 'com.android.support:design:v7:28.0.0'
+    compile 'com.android.support:recyclerview-v7:28.0.0'
+    //    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.github.arcadefire:nice-spinner:1.3.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.alibaba:fastjson:1.2.58'
+    compile project(':FlycoTabLayout_Lib')
+    //    compile project(':zxing-android-embedded')
+    compile project(':library')
+    compile project(':imageselector')
+    compile files('libs/alipaySdk-20180403.jar')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile files('libs/jcore-android_v1.1.0.jar')
+    compile files('libs/jpush-android_v3.0.1.jar')
+    compile files('libs/vitamio.jar')
+    compile files('libs/tbs_sdk_thirdapp_v3.6.0.1310_43612_sharewithdownload_withoutGame_obfs_20180706_163319.jar')
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.12.0'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+    compile 'ch.ielse:switchbutton:1.0.1'
+    //仿IOS按钮控件
+    //    compile 'com.nineoldandroids:library:2.4.0'
+    //    compile 'com.facebook.fresco:fresco:0.14.1'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
+    compile 'org.java-websocket:Java-WebSocket:1.3.0'
+    compile 'com.qiniu:qiniu-android-sdk:7.3.+'
+    compile 'com.sunfusheng:marqueeview:1.3.3'
+//    compile 'com.getui:sdk:2.12.5.0'
+    //    compile 'com.github.qingmei2:QrCodeScannerView-Android:1.1'
+    compile 'com.google.zxing:core:3.2.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.youth.banner:banner:1.4.10'
+    //极光
+//    compile 'cn.jiguang.sdk:jpush:3.5.4'  // 此处以JPush 3.5.4 版本为例。
+//    compile 'cn.jiguang.sdk:jcore:2.2.6'  // 此处以JCore 2.2.6 版本为例。
+//    implementation 'com.github.yuzhiqiang1993:zxing:2.1.4'
+
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Beatbtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/view_size_10"
+    android:paddingRight="@dimen/view_size_10"
+    android:paddingBottom="@dimen/view_size_10"
+    >
+
+</RadioButton>

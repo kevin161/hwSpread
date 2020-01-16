@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景颜色 -->
+<item android:drawable="@color/white" />
+
+
+    <!--<item-->
+        <!--android:gravity="center">-->
+        <!--<shape android:shape="rectangle" >-->
+            <!--<size android:height="30dp"-->
+                <!--android:width="30dp" />-->
+            <!--<solid android:color="@color/white" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <item android:top="@dimen/view_size_150">
+        <!-- 图片 -->
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+            android:gravity="top"
+            android:antialias="false"
+            android:dither="false"
+            android:filter="true"
+            android:mipMap="true"
+            android:tileMode="disabled"
+            android:src="@mipmap/login_icon"
+
+            />
+
+    </item>
+
+
+
+</layer-list>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/view_size_10"
+    android:paddingRight="@dimen/view_size_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="@dimen/view_size_400"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/view_size_5"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape"
+                    android:minHeight="@dimen/view_size_150" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/home_top_round"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_6dp_bottom"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/view_size_15"
+                android:text="凤禧和田玉平安扣吊坠情侣玉佩一对男女款项链玉石挂坠白玉挂坠..."
+                android:textColor="@color/color_969696"
+                android:textSize="@dimen/text_size_14" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="@dimen/view_size_400"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_size_5"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape"
+                    android:minHeight="@dimen/view_size_150" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@mipmap/home_top_round"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_3dp_bottom"
+                android:maxLines="2"
+                android:padding="@dimen/view_size_15"
+                android:text="艺铂缘和田玉貔貅吊坠开光招财运貔貅玉坠男女款情侣吊坠保平安玉佩玉器新疆和田玉挂件..."
+                android:textColor="@color/color_969696"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_15" />
+
+</LinearLayout>

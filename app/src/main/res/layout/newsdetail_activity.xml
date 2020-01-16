@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_50"
+        android:background="@color/white"
+        android:padding="@dimen/view_size_10">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/view_size_17"
+                android:layout_height="@dimen/view_size_17"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/back2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="公告详情"
+            android:textColor="#454545"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="重置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ECECEC" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3px" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_size_10"
+                android:layout_marginTop="@dimen/view_size_10"
+                android:layout_marginRight="@dimen/view_size_10"
+                android:textColor="#151515"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_size_10"
+                android:layout_marginTop="@dimen/view_size_5"
+                android:layout_marginRight="@dimen/view_size_10"
+                android:background="@drawable/ececec_12dp"
+                android:paddingStart="@dimen/view_size_6"
+                android:paddingEnd="@dimen/view_size_6"
+                android:paddingBottom="@dimen/view_size_2"
+                android:textColor="@color/color_969696"
+                android:textSize="@dimen/text_size_12"
+                tool:text="sjsjsjsjsj" />
+
+
+            <WebView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_size_10"
+                android:layout_marginTop="@dimen/view_size_10"
+                android:layout_marginRight="@dimen/view_size_10" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f0f0f0"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_50"
+        android:background="@color/black"
+        android:padding="@dimen/view_size_10">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/view_size_17"
+                android:layout_height="@dimen/view_size_17"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/back_icon" />
+
+            <TextView
+                android:id="@+id/textView_title_title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_size_10"
+                android:layout_toRightOf="@+id/back"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="我的资金"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="奖金提现"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/withdrawal_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="提现记录"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_size_10"
+        android:text="★ 将可提现奖金转移至账户余额，每次收取10%手续费"
+        android:textColor="@color/color_969696"
+        android:textSize="@dimen/text_size_12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_size_10"
+                android:text="可提现奖金"
+                android:textColor="@color/color_969696"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/bonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_size_20"
+                android:background="@null"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/view_size_10"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textColor="@color/light"
+                android:textSize="@dimen/text_size_14" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_1"
+            android:layout_marginLeft="@dimen/view_size_20"
+            android:layout_marginRight="@dimen/view_size_20"
+            android:background="@color/color_f0f0f0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_size_10"
+                android:text="金额"
+                android:textColor="@color/color_969696"
+                android:textSize="@dimen/text_size_12" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_size_20"
+                android:layout_marginRight="@dimen/view_size_10"
+                android:background="@null"
+                android:digits="0123456789."
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:hint="请输入提现金额"
+                android:textColor="@color/light"
+                android:textSize="@dimen/text_size_14"
+
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_1"
+            android:layout_marginLeft="@dimen/view_size_20"
+            android:layout_marginRight="@dimen/view_size_20"
+            android:background="@color/color_f0f0f0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_size_10"
+                android:text="资金密码"
+                android:textColor="@color/color_969696"
+                android:textSize="@dimen/text_size_12" />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_size_20"
+                android:layout_marginRight="@dimen/view_size_10"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入资金密码"
+                android:inputType="textPassword"
+                android:textColor="@color/light"
+                android:textSize="@dimen/text_size_14"
+
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_20"
+        android:layout_gravity="right"
+        android:text="忘记密码?"
+        android:layout_marginRight="@dimen/view_size_5"
+        android:textColor="@color/color_3BA370"
+        android:textSize="@dimen/text_size_14"/>
+
+
+    <TextView
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_size_20"
+        android:layout_marginTop="@dimen/view_size_50"
+        android:layout_marginRight="@dimen/view_size_20"
+        android:background="@drawable/btn_3ba370_20dp"
+        android:gravity="center"
+        android:padding="@dimen/view_size_15"
+        android:text="提现"
+        android:textColor="@color/white"
+        android:textSize="@dimen/view_size_20" />
+
+
+</LinearLayout>

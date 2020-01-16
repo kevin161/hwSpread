@@ -1,0 +1,95 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:visibility="gone"
+                android:background="#ececec" />
+
+            <RadioGroup
+                android:id="@+id/ma_group"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/ma_btn1"
+                    style="@style/Mainbtn"
+                    android:checked="true"
+                    android:drawableTop="@drawable/home_rbt"
+                    android:text="首页" />
+
+                <RadioButton
+                    android:id="@+id/ma_btn2"
+                    style="@style/Mainbtn"
+                    android:drawableTop="@drawable/dianpu_rbt"
+                    android:text="店铺" />
+
+                <RadioButton
+                    android:id="@+id/ma_btn3"
+                    style="@style/Mainbtn"
+                    android:visibility="gone"
+                    android:drawableTop="@drawable/mmy_rbt"
+                    android:text="币币市场" />
+                <RadioButton
+                    android:id="@+id/ma_btn4"
+                    style="@style/Mainbtn"
+                    android:drawableTop="@drawable/mmy_rbt"
+                    android:visibility="gone"
+                    android:text="EHE专区" />
+                <RadioButton
+                    android:id="@+id/ma_btn6"
+                    style="@style/Mainbtn"
+                    android:visibility="gone"
+                    android:drawableTop="@drawable/mmy_rbt"
+                    android:text="OTC" />
+                <RadioButton
+                    android:id="@+id/ma_btn7"
+                    style="@style/Mainbtn"
+                    android:drawableTop="@drawable/mmy_rbt"
+                    android:visibility="gone"
+                    android:text="场外" />
+                <RadioButton
+                    android:id="@+id/ma_btn5"
+                    style="@style/Mainbtn"
+                    android:drawableTop="@drawable/mmy_rbt"
+                    android:text="我的" />
+
+               
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>

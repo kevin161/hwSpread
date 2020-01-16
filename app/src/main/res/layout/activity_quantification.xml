@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:background="@color/color_464A53"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_40"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_17"
+        android:gravity="center"
+        android:text="启动量化"
+        android:background="@color/color_32353C"
+        />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:paddingLeft="@dimen/view_size_15"
+        android:paddingRight="@dimen/view_size_15"
+        />
+
+</LinearLayout>

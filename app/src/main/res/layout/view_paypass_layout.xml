@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewSpace"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_12dp"
+        android:orientation="vertical">
+
+        <!--==============top=================-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_pay_close" />
+
+            <TextView
+                android:id="@+id/tv_passText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="请输入支付密码"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#EEEDED" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp"
+            android:visibility="gone"
+            tool:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingBottom="5dp"
+                android:text="￥"
+                android:textColor="#EC3537"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="5499"
+                android:textColor="#EC3537"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <!--==============pass=================-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--======1======-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/payview_stroke_gray_shape"
+                    android:gravity="center"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+
+                <TextView
+                    android:id="@+id/tv_pass1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+            <!--=====2=====-->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/payview_stroke_gray_shape"
+                    android:gravity="center"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+
+                <TextView
+                    android:id="@+id/tv_pass2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+
+            <!--=====3=====-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/payview_stroke_gray_shape"
+                    android:gravity="center"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+
+                <TextView
+                    android:id="@+id/tv_pass3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+            <!--=====4=======-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/payview_stroke_gray_shape"
+                    android:gravity="center"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+
+                <TextView
+                    android:id="@+id/tv_pass4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+            <!--=======5==========-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/payview_stroke_gray_shape"
+                    android:gravity="center"
+                    android:textSize="42sp" />
+
+                <TextView
+                    android:id="@+id/tv_pass5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+            <!--=========6=======-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/payview_stroke_gray_shape"
+                    android:gravity="center"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+
+                <TextView
+                    android:id="@+id/tv_pass6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/alipay"
+                    android:textSize="42sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!--==============forget=================-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="忘记密码?"
+                android:textColor="#343434"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+        <!--==============输入键盘=================-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/graye3">
+
+            <GridView
+                android:id="@+id/gv_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@color/graye3"
+                android:numColumns="3"
+                android:verticalSpacing="1dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

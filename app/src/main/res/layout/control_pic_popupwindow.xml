@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/trans_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"
+        android:background="#6a000000"/>
+    <!-- #AF000000 70%透明灰 -->
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_cancel"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_1"
+            android:background="#e0e3e6" />
+
+        <TextView
+            android:id="@+id/btn_myquestion_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_size_13"
+            android:background="@drawable/whitelayout_onlick"
+            android:gravity="center"
+            android:padding="@dimen/view_size_13"
+            android:text="拍照"
+            android:textColor="@color/black_80"
+            android:textSize="@dimen/text_size_18"  />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_1"
+            android:background="#e0e3e6" />
+
+        <TextView
+            android:id="@+id/btn_myquestion_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_size_3"
+            android:background="@drawable/whitelayout_onlick"
+            android:gravity="center"
+            android:padding="@dimen/view_size_13"
+            android:text="从手机相册选择"
+            android:textColor="@color/black_80"
+            android:textSize="@dimen/text_size_18"  />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_10"
+            android:background="#f2f5f7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_size_50"
+            android:background="@drawable/whitelayout_onlick"
+            android:gravity="center"
+            android:text="取 消"
+            android:textColor="@color/black_80"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+</RelativeLayout>

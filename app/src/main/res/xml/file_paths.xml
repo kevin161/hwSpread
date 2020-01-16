@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+
+    <!-- 这个是保存拍照图片的路径,必须配置。 -->
+    <external-path
+        name="images"
+        path="Android/data/com.leisurely.spread/files/Pitures" />
+    <external-path
+        name="files_root"
+        path="Android/data/com.leisurely.spread/" />
+    <paths>
+        <external-path name="Android/data/com.leisurely.spread/files/Pitures" />
+    </paths>
+
+</paths>

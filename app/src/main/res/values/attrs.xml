@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string" />
+        <attr name="layout_heightPercent" format="string" />
+        <attr name="layout_marginPercent" format="string" />
+        <attr name="layout_marginLeftPercent" format="string" />
+        <attr name="layout_marginTopPercent" format="string" />
+        <attr name="layout_marginRightPercent" format="string" />
+        <attr name="layout_marginBottomPercent" format="string" />
+        <attr name="layout_marginStartPercent" format="string" />
+        <attr name="layout_marginEndPercent" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="DownExpandView">
+        <attr name="expand_title" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TabMenuView">
+        <attr name="tab_padding" format="dimension" />
+        <attr name="tab_paddingLeft" format="dimension" />
+        <attr name="tab_paddingRight" format="dimension" />
+        <attr name="tab_paddingTop" format="dimension" />
+        <attr name="tab_paddingBottom" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CountEditView">
+        <attr name="src_subtract" format="reference" />
+        <attr name="src_add" format="reference" />
+        <attr name="count" format="integer" />
+        <attr name="min_count" format="integer" />
+        <attr name="max_count" format="integer" />
+    </declare-styleable>
+
+    <!--    <declare-styleable name="Size">
+            <attr name="size" format="reference"/>
+        </declare-styleable>-->
+    <declare-styleable name="AvatarImage">
+        <attr name="aiBorderSize" format="dimension" />
+        <attr name="aiBorderSizeRatio" format="float" />
+        <attr name="aiType" format="integer" />
+    </declare-styleable>
+
+    <!--可拉伸头部-->
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+        <attr name="seconfOffset" format="dimension" />
+        <attr name="isHeaderAlpha" format="boolean" />
+        <attr name="needMinusHeight" format="dimension" />
+        <attr name="slideScale" format="float" />
+    </declare-styleable>
+    <!--圆形或者圆角的imageview-->
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="DashView">
+        <attr name="dashWidth" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineHeight" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="dashOrientation" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="search_searchedit">
+        <attr name="search_default" format="boolean" />
+        <attr name="search_imagewidth" format="dimension" />
+        <attr name="search_textSize" format="dimension" />
+        <attr name="search_textColor" format="color" />
+        <attr name="search_hintstring" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="WarpLinearLayout">
+        <attr name="grivate" format="enum"><!--对齐方式 !-->
+            <enum name="right" value="0"></enum>
+            <enum name="left" value="1"></enum>
+            <enum name="center" value="2"></enum>
+        </attr>
+        <attr name="horizontal_Space" format="dimension"></attr>
+        <attr name="vertical_Space" format="dimension"></attr>
+        <attr name="isFull" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="AnimateText">
+        <attr name="time" format="integer" />
+        <attr name="annimaStart" format="boolean" />
+        <attr name="isNumber" format="boolean" />
+        <attr name="changeCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference" />
+        <attr name="mvAnimDuration" format="integer|reference" />
+        <attr name="mvTextSize" format="dimension|reference" />
+        <attr name="mvTextColor" format="color|reference" />
+        <attr name="mvSingleLine" format="boolean" />
+        <attr name="mvGravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0" />
+            <enum name="top_to_bottom" value="1" />
+            <enum name="right_to_left" value="2" />
+            <enum name="left_to_right" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MoreTextView">
+        <attr name="minLine" format="integer" />
+        <attr name="moreTextColor" format="color" />
+        <attr name="moreSwitchTextColor" format="color" />
+        <attr name="moreTextSize" format="dimension" />
+        <attr name="moreSwitchTextSize" format="dimension" />
+        <attr name="moreSwitchDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="customImageViewStyle" format="reference" />
+    </declare-styleable>
+    <!-- 自己定义圆角ImageView -->
+    <declare-styleable name="CustomImageView">
+        <attr name="circle" format="boolean" value ="false"/>
+        <attr name="radius" format="dimension" value ="20" />
+    </declare-styleable>
+</resources>

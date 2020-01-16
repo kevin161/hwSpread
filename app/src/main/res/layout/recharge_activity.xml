@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_50"
+        android:background="@color/color_262523"
+        android:padding="@dimen/view_size_10">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/view_size_20"
+                android:layout_height="@dimen/view_size_20"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/back_icon" />
+
+            <TextView
+                android:id="@+id/textView_title_title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_size_10"
+                android:layout_toRightOf="@+id/back"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="我的资金"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recharge_detail_li"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/view_size_10"
+                android:layout_toRightOf="@+id/back"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="充值记录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17" />
+
+            <ImageView
+                android:layout_width="@dimen/view_size_20"
+                android:layout_height="@dimen/view_size_20"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/recharge_history" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="充值"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f0f0f0"
+            android:orientation="vertical"
+            android:padding="@dimen/view_size_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_20dp"
+                android:orientation="vertical"
+                android:padding="@dimen/view_size_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="打款信息"
+                        android:textColor="@color/light"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_10"
+                        android:text="请下载对应银行的app进行打款"
+                        android:textColor="@color/color_969696"
+                        android:textSize="@dimen/text_size_12" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_size_1"
+                    android:layout_marginTop="@dimen/view_size_10"
+                    android:background="@color/color_f0f0f0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_size_15"
+                    android:layout_marginBottom="@dimen/view_size_10">
+
+                    <ImageView
+                        android:id="@+id/bank_logo"
+                        android:layout_width="@dimen/view_size_50"
+                        android:layout_height="@dimen/view_size_50" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_10"
+                        android:layout_toRightOf="@+id/bank_logo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/bank_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_size_50"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/light"
+                            android:textSize="@dimen/text_size_15" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bank_logo"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_size_10"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="收款人姓名 :"
+                                android:textColor="@color/color_969696"
+                                android:textSize="@dimen/text_size_12" />
+
+                            <TextView
+                                android:id="@+id/account_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/view_size_10"
+                                android:textColor="@color/light"
+                                android:textSize="@dimen/text_size_14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_size_10"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="收款人银行账号 :"
+                                android:textColor="@color/color_969696"
+                                android:textSize="@dimen/text_size_12" />
+
+                            <TextView
+                                android:id="@+id/bank_code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/view_size_10"
+                                android:textColor="@color/light"
+                                android:textSize="@dimen/text_size_14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_size_10"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="开户支行 :"
+                                android:textColor="@color/color_969696"
+                                android:textSize="@dimen/text_size_12" />
+
+                            <TextView
+                                android:id="@+id/bank_subname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/view_size_10"
+                                android:textColor="@color/light"
+                                android:textSize="@dimen/text_size_14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/view_size_10">
+                        <TextView
+                            android:id="@+id/copy_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/text_size_30"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/view_size_15"
+                            android:paddingRight="@dimen/view_size_15"
+                            android:background="@drawable/round262523_20dp"
+                            android:text="复制姓名"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14"
+                            />
+                            <TextView
+                                android:id="@+id/copy_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/text_size_30"
+                                android:gravity="center"
+                                android:layout_marginLeft="@dimen/view_size_10"
+                                android:layout_marginRight="@dimen/view_size_10"
+                                android:paddingLeft="@dimen/view_size_15"
+                                android:paddingRight="@dimen/view_size_15"
+                                android:background="@drawable/round262523_20dp"
+                                android:text="复制账号"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_14"
+                                />
+                            <TextView
+                                android:id="@+id/copy_zhihang"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/text_size_30"
+
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/view_size_15"
+                                android:paddingRight="@dimen/view_size_15"
+                                android:background="@drawable/round262523_20dp"
+                                android:text="复制支行"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_14"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_10"
+                android:background="@drawable/white_20dp"
+                android:orientation="vertical"
+                android:padding="@dimen/view_size_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="打款凭证信息"
+                        android:textColor="@color/light"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_10"
+                        android:text="请填写真实信息"
+                        android:textColor="@color/color_969696"
+                        android:textSize="@dimen/text_size_12" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_size_1"
+                    android:layout_marginTop="@dimen/view_size_10"
+                    android:background="@color/color_f0f0f0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_size_50"
+                    android:layout_marginTop="@dimen/view_size_10"
+                    android:layout_marginRight="@dimen/view_size_50"
+                    android:background="@drawable/f0f0f0_20dp"
+                    android:padding="@dimen/view_size_5">
+
+                    <EditText
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_5"
+                        android:layout_marginRight="@dimen/view_size_5"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:hint="打款人姓名"
+                        android:maxLines="1"
+                        android:textColor="@color/light"
+                        android:textSize="@dimen/text_size_15" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_size_50"
+                    android:layout_marginTop="@dimen/view_size_10"
+                    android:layout_marginRight="@dimen/view_size_50"
+                    android:background="@drawable/f0f0f0_20dp"
+                    android:padding="@dimen/view_size_5">
+
+                    <EditText
+                        android:id="@+id/user_bank_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_5"
+                        android:layout_marginRight="@dimen/view_size_5"
+                        android:background="@null"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:ellipsize="end"
+                        android:hint="打款人银行账号"
+                        android:maxLines="1"
+                        android:maxLength="19"
+                        android:textColor="@color/light"
+                        android:textSize="@dimen/text_size_15" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_size_50"
+                    android:layout_marginTop="@dimen/view_size_10"
+                    android:layout_marginRight="@dimen/view_size_50"
+                    android:background="@drawable/f0f0f0_20dp"
+                    android:padding="@dimen/view_size_5">
+
+                    <EditText
+                        android:id="@+id/money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_5"
+                        android:layout_marginRight="@dimen/view_size_5"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:inputType="numberDecimal"
+                        android:ellipsize="end"
+                        android:hint="转账金额"
+                        android:maxLength="12"
+                        android:maxLines="1"
+                        android:textColor="@color/light"
+                        android:textSize="@dimen/text_size_15" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_10"
+                android:background="@drawable/white_20dp"
+                android:orientation="vertical"
+                android:padding="@dimen/view_size_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上传打款凭证"
+                        android:textColor="@color/light"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_10"
+                        android:text="图片大小不能超过1M"
+                        android:textColor="@color/color_969696"
+                        android:textSize="@dimen/text_size_12" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_size_1"
+                    android:layout_marginTop="@dimen/view_size_10"
+                    android:background="@color/color_f0f0f0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_size_120">
+
+
+                    <LinearLayout
+                        android:id="@+id/upload_img_li"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_size_120"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/view_size_20"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/view_size_10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请上传图片"
+                            android:textColor="@color/color_969696"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_size_20"
+                            android:background="@drawable/btn_3ba370_20dp"
+                            android:paddingLeft="@dimen/view_size_20"
+                            android:paddingTop="@dimen/view_size_10"
+                            android:paddingRight="@dimen/view_size_20"
+                            android:paddingBottom="@dimen/view_size_10"
+                            android:text="上传照片"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="@dimen/view_size_120"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_size_30"
+                    android:layout_marginRight="@dimen/view_size_30"
+                    android:textColor="@color/color_969696"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_marginTop="@dimen/view_size_20"
+                    android:layout_marginBottom="@dimen/view_size_20"
+                    android:text="请在对应银行的APP里进行操作,打款凭证必须包含如下信息:凭证号(流水单号)、收款人账号、收款人姓名、打款账号、转账金额、交易时间等。"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_20"
+                android:padding="@dimen/view_size_15"
+                android:text="提交"
+                android:textSize="@dimen/view_size_20"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_3ba370_20dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

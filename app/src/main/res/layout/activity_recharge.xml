@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_50"
+        android:padding="@dimen/view_size_10">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/back_icon" />
+
+            <TextView
+                android:id="@+id/textView_title_title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_size_10"
+                android:layout_toRightOf="@+id/back"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="充值"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/txtActionBarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="充值记录"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@mipmap/zhongbang_bank_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_size_15"
+            android:layout_marginTop="@dimen/view_size_14"
+            android:text="附属账号名称"
+            android:textColor="#b2ffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_size_15"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tool:text="张启三" />
+
+        <TextView
+            android:id="@+id/txtNumLab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_marginStart="@dimen/view_size_15"
+            android:layout_marginTop="26dp"
+            android:text="附属账号"
+            android:textColor="#b2ffffff"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/txtBandCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNumLab"
+            android:layout_marginStart="@dimen/view_size_15"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tool:text="234234234234234234234234234234234234234234" />
+
+
+        <TextView
+            android:id="@+id/txtBankNameLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBandCard"
+            android:layout_marginStart="@dimen/view_size_15"
+            android:layout_marginTop="18dp"
+            android:text="开户行名称"
+            android:textColor="#b2ffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/txtBankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBandCard"
+            android:layout_marginStart="@dimen/view_size_15"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/txtBankNameLab"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            tool:text="开户行名称" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="32dp"
+        android:text="1、请确认您开户所提供的银行资料可用。"
+        android:textColor="#6A6B6C"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="10dp"
+        android:text="2、请前往各大银行app或者网银转账到以上账户。"
+        android:textColor="#6A6B6C"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/txtCopy"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/red_20dp"
+        android:gravity="center"
+        android:text="复制账号"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</LinearLayout>

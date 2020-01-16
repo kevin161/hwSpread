@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/start_logo"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/view_size_15"
+                android:layout_marginRight="@dimen/view_size_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/fenxiangjiangli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:text="分享奖励"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/view_size_65"
+                android:layout_height="@dimen/view_size_65"
+                android:layout_marginTop="@dimen/view_size_20"
+                android:background="@mipmap/login_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_13"
+                android:text="欢迎加入LCH量化资产"
+                android:textColor="@color/color_fbdb9d"
+                android:textSize="@dimen/text_size_15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_30"
+                android:layout_marginLeft="@dimen/view_size_55"
+                android:layout_marginRight="@dimen/view_size_55"
+                android:background="@drawable/white_6dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/view_size_25">
+
+                <ImageView
+                    android:id="@+id/qrcode"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp" />
+
+                <TextView
+                    android:id="@+id/invitation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_size_30"
+                    android:textColor="@color/color_6B6B6B"
+                    android:textSize="@dimen/text_size_15" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_size_5"
+                android:layout_marginLeft="@dimen/view_size_55"
+                android:layout_marginRight="@dimen/view_size_55"
+                android:layout_marginTop="@dimen/view_size_15">
+
+                <TextView
+                    android:id="@+id/save_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="保存图片"
+                    android:textSize="@dimen/text_size_13"
+                    />
+
+                <TextView
+                    android:id="@+id/copy_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="复制地址"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

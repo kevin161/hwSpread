@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="130dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_height="130dp"
+            android:layout_margin="@dimen/view_size_10" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_13"
+                android:layout_marginEnd="@dimen/view_size_10"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#212020"
+                android:textSize="@dimen/text_size_13"
+                tools:text="商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称" />
+
+
+            <TextView
+                android:id="@+id/txtLeftLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtLeftCountLab"
+                android:text="剩余数量："
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txtLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#212020"
+                android:layout_alignBaseline="@+id/txtLeftLab"
+                android:layout_toRightOf="@+id/txtLeftLab"
+                android:textSize="10sp"
+                tools:text="9999" />
+
+
+            <TextView
+                android:id="@+id/txtLeftCountLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtCashLab"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/view_size_20"
+                android:text="数量："
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txtLeftCount"
+                android:textColor="#212020"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtLeftCountLab"
+                android:layout_toRightOf="@+id/txtLeftCountLab"
+                android:textSize="10sp"
+                tools:text="9999" />
+
+            <TextView
+                android:id="@+id/txtCashLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/view_size_15"
+                android:text="￥"
+                android:textColor="#EC3537"
+                android:textSize="@dimen/text_size_9" />
+
+            <TextView
+                android:id="@+id/txtCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtCashLab"
+                android:layout_toRightOf="@+id/txtCashLab"
+                android:textColor="#EC3537"
+                tools:text="5400" />
+
+
+            <TextView
+                android:id="@+id/txtPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/text_size_10"
+                android:layout_marginBottom="@dimen/view_size_15"
+                android:background="@mipmap/goods_purchase_bg"
+                android:gravity="center"
+                android:paddingStart="@dimen/text_size_8"
+                android:paddingTop="@dimen/view_size_4"
+                android:paddingEnd="@dimen/text_size_8"
+                android:paddingBottom="@dimen/view_size_4"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                tools:text="认购代理商" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F0F0F0" />
+</LinearLayout>

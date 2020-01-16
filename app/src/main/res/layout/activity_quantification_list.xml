@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/sidefbdb9d_32353c_6dp"
+        android:paddingLeft="@dimen/view_size_11"
+        android:paddingRight="@dimen/view_size_11"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/view_size_70"
+                android:layout_height="@dimen/view_size_100"
+                android:background="@mipmap/qidonglianghua_days"
+                >
+
+                <TextView
+                    android:id="@+id/day_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="量化资产"
+                    android:textColor="@color/light"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_marginTop="@dimen/view_size_12"
+                    />
+
+                <TextView
+                    android:id="@+id/day"
+                    android:layout_marginTop="@dimen/view_size_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/day_text"
+                    android:textSize="@dimen/text_size_17"
+                    android:textColor="@color/light"
+                    android:text="360"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/view_size_20"
+                android:layout_marginTop="@dimen/view_size_15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/view_size_90"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_13"
+                        android:textColor="@color/white"
+                        android:text="日奖励:"/>
+
+                    <TextView
+                        android:id="@+id/day_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_13"
+                        android:textColor="@color/color_fbdb9d"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_size_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/view_size_90"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_13"
+                        android:textColor="@color/white"
+                        android:text="量化:"/>
+
+                    <TextView
+                        android:id="@+id/quantification_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_13"
+                        android:textColor="@color/color_fbdb9d"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_size_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/view_size_90"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_13"
+                        android:textColor="@color/white"
+                        android:text="选择数量:"/>
+
+                    <RelativeLayout
+                        android:id="@+id/count_re"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_size_22"
+                        android:background="@drawable/white_6dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/count_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/light"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_marginLeft="@dimen/view_size_10"
+                            android:layout_marginRight="@dimen/view_size_5"
+                            android:layout_toLeftOf="@+id/xiala"
+                            android:layout_centerVertical="true"
+                            />
+                        <ImageView
+                            android:id="@+id/xiala"
+                            android:layout_width="@dimen/view_size_13"
+                            android:layout_height="@dimen/view_size_8"
+                            android:layout_marginRight="@dimen/view_size_5"
+                            android:background="@mipmap/xiala_icon"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="@dimen/view_size_150"
+            android:layout_height="@dimen/view_size_40"
+            android:layout_marginTop="@dimen/view_size_25"
+            android:layout_marginBottom="@dimen/view_size_10"
+            android:background="@mipmap/qidonglianghua_icon"
+            android:textColor="@color/light"
+            android:textSize="@dimen/text_size_14"
+            android:text="启动量化"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

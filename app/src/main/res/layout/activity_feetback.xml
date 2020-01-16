@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/view_size_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/view_size_5"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/view_size_10"
+                        android:gravity="center_vertical"
+                        android:text="提出您宝贵的意见或建议"
+                        android:textColor="@color/light"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/view_size_10"
+                    android:minHeight="@dimen/view_size_120"
+                    android:textColor="@color/light"
+                    android:textSize="@dimen/text_size_16"
+                    android:hint="请输入文字..."
+                    android:gravity="left|top"
+                    android:padding="@dimen/view_size_10"
+                    />
+
+                <TextView
+                    android:id="@+id/commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_size_50"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/dcb981_6dp"
+                    android:layout_marginTop="@dimen/view_size_50"
+                    android:gravity="center"
+                    android:padding="@dimen/view_size_10"
+                    android:text="确   认"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_17" />
+            </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

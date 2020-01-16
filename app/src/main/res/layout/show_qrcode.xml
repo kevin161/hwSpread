@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:background="#eeffffff"
+    android:id="@+id/all"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="@dimen/view_size_30"
+        android:layout_height="@dimen/view_size_30"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:background="@mipmap/close"
+
+        />
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      >
+
+
+       <ImageView
+           android:id="@+id/alert_qrcode"
+           android:layout_width="@dimen/view_size_200"
+           android:layout_height="@dimen/view_size_200"
+           android:layout_centerHorizontal="true"/>
+
+       <TextView
+           android:id="@+id/copy"
+           android:layout_width="@dimen/view_size_150"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/view_size_10"
+           android:text="复制推广链接"
+           android:gravity="center"
+           android:layout_centerHorizontal="true"
+           android:textColor="@color/white"
+           android:layout_below="@+id/alert_qrcode"
+           android:layout_marginTop="@dimen/view_size_20"
+           android:background="@drawable/btn_3ba370_20dp"
+           />
+
+       <TextView
+           android:id="@+id/phone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/light"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@+id/copy"
+           android:layout_marginTop="@dimen/view_size_20"/>
+
+       <TextView
+           android:id="@+id/copy_phone"
+           android:layout_width="@dimen/view_size_150"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/view_size_10"
+           android:text="复制推广手机号"
+           android:gravity="center"
+           android:layout_centerHorizontal="true"
+           android:textColor="@color/white"
+           android:layout_below="@+id/phone"
+           android:layout_marginTop="@dimen/view_size_20"
+           android:background="@drawable/btn_3ba370_20dp"
+           />
+       <TextView
+           android:layout_below="@+id/copy_phone"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/view_size_30" />
+
+   </RelativeLayout>
+
+</LinearLayout>

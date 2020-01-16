@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/view_size_10"
+    android:paddingRight="@dimen/view_size_10">
+
+
+    <ImageView
+        android:id="@+id/imgGoods"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:paddingStart="@dimen/view_size_10"
+        android:paddingEnd="@dimen/view_size_10"
+        android:layout_marginBottom="@dimen/text_size_10"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/purchase_info" />
+
+</LinearLayout>

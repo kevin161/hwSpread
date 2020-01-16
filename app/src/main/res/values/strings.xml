@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="pull_to_refresh">刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="pull_up">上拉</string>
+    <string name="pull_down">下拉</string>
+
+    <string name="app_name">天南商城</string>
+    <string name="cancel">取消</string>
+    <string name="skip">跳过</string>
+    <string name="pls_install_wechat">请先安装微信</string>
+    <string name="pls_install_alipay">请先安装支付宝</string>
+    <string name="cancel_authorization">您取消了授权</string>
+    <string name="refuse_authorization">您拒绝了授权</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_fail">支付失败</string>
+    <string name="pay_cancel">取消支付</string>
+    <string name="success_authorization">授权成功</string>
+    <string name="fail_authorization">授权失败</string>
+    <string name="network_error">网络错误</string>
+    <string name="choose_country">选择国家/地区</string>
+    <string name="toast_system_exit">再按一次退出</string>
+    <string name="save_success">保存成功</string>
+    <string name="input_old_password">输入旧密码</string>
+    <string name="setup_new_password">设置新密码</string>
+    <string name="repeat_new_password">重复新密码</string>
+    <string name="modify_success">修改成功</string>
+    <string name="modify_pwd">修改密码</string>
+
+    <string name="home">首页</string>
+    <string name="dianpu">店铺</string>
+    <string name="mine">我的</string>
+
+</resources>

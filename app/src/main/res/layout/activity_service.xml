@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/view_size_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_size_3"
+            android:text="客服QQ:"
+            android:textColor="@color/light"
+            android:textSize="@dimen/text_size_16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_45"
+            android:layout_marginTop="@dimen/view_size_10"
+            android:background="@drawable/white_6dp"
+            android:padding="@dimen/view_size_3">
+
+            <TextView
+                android:id="@+id/qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/view_size_10"
+                android:layout_toLeftOf="@+id/copy_qq"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/light"
+                android:textSize="@dimen/text_size_17" />
+
+            <ImageView
+                android:id="@+id/copy_qq"
+                android:layout_width="@dimen/view_size_20"
+                android:layout_height="@dimen/view_size_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/copy_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_size_24"
+            android:padding="@dimen/view_size_3"
+            android:text="客服微信号:"
+            android:textColor="@color/light"
+            android:textSize="@dimen/text_size_16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_45"
+            android:layout_marginTop="@dimen/view_size_10"
+            android:background="@drawable/white_6dp"
+            android:padding="@dimen/view_size_3">
+
+            <TextView
+                android:id="@+id/wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/view_size_10"
+                android:layout_toLeftOf="@+id/copy_wechat"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/light"
+                android:textSize="@dimen/text_size_17" />
+
+            <ImageView
+                android:id="@+id/copy_wechat"
+                android:layout_width="@dimen/view_size_20"
+                android:layout_height="@dimen/view_size_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/copy_icon" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
