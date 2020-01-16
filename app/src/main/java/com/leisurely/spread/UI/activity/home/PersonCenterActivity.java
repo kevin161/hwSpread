@@ -220,7 +220,7 @@ public class PersonCenterActivity extends BaseActivity {
                 double money = Double.parseDouble(SharedPreferencesUtil.readString("totalTrade", "0"));
 //                if (money >= 2000) {
 //                    startActivity(new Intent(this, MyExtensionActivity.class));
-                startActivity(new Intent(this, MyRecommenderActivity.class));
+                startActivity(new Intent(this, MyExtension2Activity.class));
 //                } else {
 //                    ToastUtil.showToast("暂无推广权限，请先购买商品");
 //                }

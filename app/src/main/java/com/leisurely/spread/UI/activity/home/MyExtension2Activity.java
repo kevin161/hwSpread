@@ -1,6 +1,8 @@
 package com.leisurely.spread.UI.activity.home;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -82,7 +84,9 @@ public class MyExtension2Activity extends BaseActivity {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    ImageUtil.createQRcodeImage(qrcodeStr, imgQrCode);
+                    Bitmap qr = ImageUtil.createQRcodeImage(qrcodeStr, imgQrCode);
+                    Bitmap logo = BitmapFactory.decodeResource(getResources(), R.mipmap.qr_logo);
+                    imgQrCode.setImageBitmap(ImageUtil.addLogo(qr, logo));
                 }
             });
         } else {
