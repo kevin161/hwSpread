@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.leisurely.spread.R;
 import com.leisurely.spread.UI.activity.home.HomeActivity;
+import com.leisurely.spread.UI.activity.home.NewsActivity;
 import com.leisurely.spread.UI.activity.home.PersonCenterActivity;
 import com.leisurely.spread.UI.activity.home.RegisterOrLoginActivity;
 import com.leisurely.spread.UI.activity.home.ShopActivity;
@@ -54,13 +55,13 @@ public class MainAct extends TabActivity implements OnCheckedChangeListener {
 
         iHome = new Intent(this, HomeActivity.class);
         tabhost.addTab(tabhost.newTabSpec("iHome")
-                .setIndicator(getResources().getString(R.string.home), getResources().getDrawable(R.mipmap.home_sle_icon))
+                .setIndicator(getResources().getString(R.string.home), getResources().getDrawable(R.mipmap.tn_home_icon_select))
                 .setContent(iHome));
 
-//        iHangqing = new Intent(this, ShopActivity.class);
-//        tabhost.addTab(tabhost.newTabSpec("iHangqing").setIndicator(getResources().getString(R.string.dianpu),
-//                getResources().getDrawable(R.mipmap.dianpu_sle_icon)).setContent(iHangqing));
-//		iBBMarket = new Intent(this, BBMarketAct.class);
+        iHangqing = new Intent(this, NewsActivity.class);
+        tabhost.addTab(tabhost.newTabSpec("iHangqing").setIndicator(getResources().getString(R.string.dianpu),
+                getResources().getDrawable(R.mipmap.tn_gonggao_icon_select)).setContent(iHangqing));
+//		iBBMarket = new Intent(this, PersonCenterActivity.class);
 //		tabhost.addTab(tabhost.newTabSpec("iBBMarket").setIndicator(getResources().getString(R.string.bbmarket),
 //				getResources().getDrawable(R.drawable.home_over)).setContent(iBBMarket));
 //		iEHE = new Intent(this, EHEMarketAct.class);
@@ -73,10 +74,10 @@ public class MainAct extends TabActivity implements OnCheckedChangeListener {
 //		iChangwai = new Intent(this, ChangWaiAct.class);
 //		tabhost.addTab(tabhost.newTabSpec("iChangwai").setIndicator(getResources().getString(R.string.iChangwai),
 //				getResources().getDrawable(R.drawable.home_over)).setContent(iChangwai));
-//        iMine = new Intent(this, PersonCenterActivity.class);
-//        tabhost.addTab(tabhost.newTabSpec("iMine")
-//                .setIndicator(getResources().getString(R.string.mine), getResources().getDrawable(R.mipmap.me_sle_icon))
-//                .setContent(iMine));
+        iMine = new Intent(this, PersonCenterActivity.class);
+        tabhost.addTab(tabhost.newTabSpec("iMine")
+                .setIndicator(getResources().getString(R.string.mine), getResources().getDrawable(R.mipmap.tn_mine_icon_select))
+                .setContent(iMine));
 
     }
 
@@ -178,16 +179,14 @@ public class MainAct extends TabActivity implements OnCheckedChangeListener {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             if ((System.currentTimeMillis() - exitTime) > 2000) {
-                ToastUtil.makeTextAndShow(getResources().getString(R.string.toast_system_exit));
+                ToastUtil.showToast((getResources().getString(R.string.toast_system_exit)));
                 exitTime = System.currentTimeMillis();
             } else {
-                finish();
-//                System.exit(0);
-//                finish();
-//                closeWPS(getPackageName());
-//                ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-//                manager.restartPackage(getPackageName());
-//                    android.os.Process.killProcess(android.os.Process.myPid());
+                Intent startMain = new Intent(Intent.ACTION_MAIN);
+                startMain.addCategory(Intent.CATEGORY_HOME);
+                startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(startMain);
+
             }
             return true;
         }

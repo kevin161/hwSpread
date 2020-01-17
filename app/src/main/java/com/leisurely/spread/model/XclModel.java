@@ -909,7 +909,7 @@ public class XclModel extends BaseModel {
         final HashMap<String, String> header = new HashMap<>();
         header.put("Content-Type", "application/json;charset=UTF-8");
         header.put("token", SharedPreferencesUtil.readString(SysConstants.TOKEN, ""));
-        request(true, OkHttp.METHOD.GET, context, SysConstants.queryMemberInfo, header, map, "queryMemberInfo");
+        request(false, OkHttp.METHOD.GET, context, SysConstants.queryMemberInfo, header, map, "queryMemberInfo");
     }
 
     public void queryMoney(String uid) {
@@ -1521,7 +1521,7 @@ public class XclModel extends BaseModel {
         header.put("Content-Type", "application/json;charset=UTF-8");
         header.put("token", SharedPreferencesUtil.readString(SysConstants.TOKEN, ""));
 //        map.put("token", SharedPreferencesUtil.readString(SysConstants.TOKEN, ""));
-        request(true, OkHttp.METHOD.GET, context, SysConstants.getUserMoneyInfo(uid), header, map, "getUserMoneyInfo");
+        request(false, OkHttp.METHOD.GET, context, SysConstants.getUserMoneyInfo(uid), header, map, "getUserMoneyInfo");
     }
 
     /**

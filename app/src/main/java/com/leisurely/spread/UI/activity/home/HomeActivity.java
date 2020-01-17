@@ -477,7 +477,6 @@ public class HomeActivity extends BaseActivity {
         view.findViewById(R.id.imgUpdate).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2020/1/15 todo guoyazhou
                 backDialog.dismiss();
             }
         });
@@ -540,26 +539,21 @@ public class HomeActivity extends BaseActivity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
 
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if ((System.currentTimeMillis() - mPressedTime) > 2000) {
-                showToast(getResources().getString(R.string.toast_system_exit));
-                mPressedTime = System.currentTimeMillis();
-            } else {
-                Intent startMain = new Intent(Intent.ACTION_MAIN);
-                startMain.addCategory(Intent.CATEGORY_HOME);
-                startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(startMain);
-//                System.exit(0);
-//                finish();
-//                closeWPS(getPackageName());
-//                ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-//                manager.restartPackage(getPackageName());
-//                    android.os.Process.killProcess(android.os.Process.myPid());
-            }
-            return true;
-        }
+//        if (keyCode == KeyEvent.KEYCODE_BACK) {
+//            if ((System.currentTimeMillis() - mPressedTime) > 2000) {
+//                showToast(getResources().getString(R.string.toast_system_exit));
+//                mPressedTime = System.currentTimeMillis();
+//            } else {
+//                Intent startMain = new Intent(Intent.ACTION_MAIN);
+//                startMain.addCategory(Intent.CATEGORY_HOME);
+//                startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                startActivity(startMain);
+//
+//            }
+//            return true;
+//        }
 
-        return super.onKeyDown(keyCode, event);
+        return false;
     }
 
     private RadioButton addRadioButton(Commodity commodity) {

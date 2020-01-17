@@ -37,7 +37,7 @@
 
             <RadioGroup
                 android:id="@+id/ma_group"
-                android:visibility="gone"
+                android:visibility="visible"
                 tools:visibility="visible"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                     android:id="@+id/ma_btn2"
                     style="@style/Mainbtn"
                     android:drawableTop="@drawable/dianpu_rbt"
-                    android:text="店铺" />
+                    android:text="公告" />
 
                 <RadioButton
                     android:id="@+id/ma_btn3"
