@@ -1063,7 +1063,7 @@ public class XclModel extends BaseModel {
         final HashMap<String, String> map = new HashMap<>();
         final HashMap<String, String> header = new HashMap<>();
         header.put("Content-Type", "application/json;charset=UTF-8");
-        request(true, OkHttp.METHOD.GET, context, SysConstants.queryIndexGoods, header, map, "queryIndexGoods");
+        request(false, OkHttp.METHOD.GET, context, SysConstants.queryIndexGoods, header, map, "queryIndexGoods");
     }
 
     public void findAddressPage(int pagenum, int pagesize) {
@@ -1242,7 +1242,7 @@ public class XclModel extends BaseModel {
         map.put("pageSize", "100");
         map.put("type", "2");
 //        header.put("token", SharedPreferencesUtil.readString(SysConstants.TOKEN, ""));
-        request(true, OkHttp.METHOD.GET, context, SysConstants.getCarouselList, header, map, "getCarouselList");
+        request(false, OkHttp.METHOD.GET, context, SysConstants.getCarouselList, header, map, "getCarouselList");
     }
 
     public void getNewsList(int pagenum, int pagesize, String topic) {
@@ -1253,7 +1253,7 @@ public class XclModel extends BaseModel {
         map.put("page", String.valueOf(pagenum));
         map.put("limit", String.valueOf(pagesize));
         map.put("topic", topic);
-        request(true, OkHttp.METHOD.GET, context, SysConstants.getNewsList, header, map, "getNewsList");
+        request(false, OkHttp.METHOD.GET, context, SysConstants.getNewsList, header, map, "getNewsList");
     }
 
     public void queryNewsById(String id) {
@@ -1475,7 +1475,7 @@ public class XclModel extends BaseModel {
         final HashMap<String, String> header = new HashMap<>();
         header.put("Content-Type", "application/json;charset=UTF-8");
         header.put("token", SharedPreferencesUtil.readString(SysConstants.TOKEN, ""));
-        request(true, OkHttp.METHOD.GET, context, SysConstants.checkUserAccount, header, map, "checkUserAccount");
+        request(false, OkHttp.METHOD.GET, context, SysConstants.checkUserAccount, header, map, "checkUserAccount");
     }
 
     public void validateAndOpenAcct(String cert_no, String phone, String corp_name, String bank_acct, String cert_front, String cert_back, String acct_name

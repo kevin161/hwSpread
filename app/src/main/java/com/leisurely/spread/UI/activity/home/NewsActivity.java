@@ -1,6 +1,7 @@
 package com.leisurely.spread.UI.activity.home;
 
 import android.os.Handler;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.leisurely.spread.R;
+import com.leisurely.spread.UI.activity.setting.MainAct;
 import com.leisurely.spread.UI.adapter.NewsAdapter;
 import com.leisurely.spread.UI.view.PullToRefreshLayout;
 import com.leisurely.spread.UI.view.PullableListView;
